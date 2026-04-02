@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Bella Cucina — Fine Italian Dining</title>
+
+  <!-- =========================================================
+       Fonts:
+       · DM Serif Display  — bold editorial headlines
+       · Libre Baskerville — refined serif for sub-headings
+       · DM Sans           — clean, modern body text
+  ========================================================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =========================================================
+       ANNOUNCEMENT BAR — top strip
+  ========================================================== -->
+  <div class="announcement-bar">
+    <div class="ann-track">
+      <span>🎉 Grand Tasting Weekend — Book before Sunday · Use code <strong>BELLA20</strong> for 20% off</span>
+      <span class="ann-dot">◆</span>
+      <span>🍷 New Winter Menu Now Available — Ask your server for details</span>
+      <span class="ann-dot">◆</span>
+      <span>🎉 Grand Tasting Weekend — Book before Sunday · Use code <strong>BELLA20</strong> for 20% off</span>
+      <span class="ann-dot">◆</span>
+      <span>🍷 New Winter Menu Now Available — Ask your server for details</span>
+      <span class="ann-dot">◆</span>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       STICKY NAVIGATION
+  ========================================================== -->
+  <header class="site-header" id="top">
+    <nav class="navbar">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo">
+        <div class="logo-mark">LB</div>
+        <div class="logo-wordmark">
+          <span class="logo-main">La Bella</span>
+          <span class="logo-sub">Cucina · Est. 1987</span>
+        </div>
+      </a>
+
+      <!-- CSS-only mobile hamburger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-cb" />
+      <label for="nav-toggle" class="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <!-- Nav Items -->
+      <ul class="nav-list">
+        <li><a href="#home"     class="nl active">Home</a></li>
+
+        <!-- ── MEGA MENU: MENU ── -->
+        <li class="has-mega">
+          <a href="#featured" class="nl">
+            Menu <svg class="nl-arrow" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+
+          <!-- ===================== MEGA MENU PANEL ===================== -->
+          <div class="mega-panel">
+            <div class="mega-inner">
+
+              <!-- COLUMN 1: Starters -->
+              <div class="mcol mcol--saffron">
+                <div class="mcol-head">
+                  <span class="mcol-emoji">🥗</span>
+                  <div>
+                    <h3>Starters</h3>
+                    <p>Light bites to begin</p>
+                  </div>
+                </div>
+                <ul class="mitems">
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fff3e0;">🥗</div>
+                    <div class="minfo">
+                      <b>Bruschetta al Pomodoro</b>
+                      <small>Sourdough, heirloom tomato, basil, EVOO</small>
+                      <span class="mprice">₹380</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fce4ec;">🧀</div>
+                    <div class="minfo">
+                      <b>Burrata &amp; Prosciutto</b>
+                      <small>Creamy burrata, aged ham, truffle oil</small>
+                      <span class="mprice">₹620</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#e8f5e9;">🦐</div>
+                    <div class="minfo">
+                      <b>Gamberi al Aglio</b>
+                      <small>Garlic butter prawns, white wine</small>
+                      <span class="mprice">₹780</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fce4ec;">🥩</div>
+                    <div class="minfo">
+                      <b>Carpaccio di Manzo</b>
+                      <small>Beef, capers, parmigiano, rocket</small>
+                      <span class="mprice">₹850</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- COLUMN 2: Main Course (highlighted) -->
+              <div class="mcol mcol--chianti mcol--star">
+                <div class="mcol-popular-tag">⭐ Most Ordered</div>
+                <div class="mcol-head">
+                  <span class="mcol-emoji">🍝</span>
+                  <div>
+                    <h3>Main Course</h3>
+                    <p>Signature kitchen dishes</p>
+                  </div>
+                </div>
+                <ul class="mitems">
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fff3e0;">🍝</div>
+                    <div class="minfo">
+                      <b>Lobster Risotto <em class="mbadge">Chef's</em></b>
+                      <small>Arborio, live lobster, saffron bisque</small>
+                      <span class="mprice">₹1,850</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fce4ec;">🥩</div>
+                    <div class="minfo">
+                      <b>Bistecca Fiorentina</b>
+                      <small>T-bone, rosemary, roasted garlic, jus</small>
+                      <span class="mprice">₹2,400</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#e0f2f1;">🐟</div>
+                    <div class="minfo">
+                      <b>Branzino in Crosta</b>
+                      <small>Salt-crust sea bass, herb oil, citrus</small>
+                      <span class="mprice">₹1,650</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#f3e5f5;">🍄</div>
+                    <div class="minfo">
+                      <b>Truffle Tagliatelle</b>
+                      <small>Egg pasta, black truffle, porcini cream</small>
+                      <span class="mprice">₹1,280</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- COLUMN 3: Desserts -->
+              <div class="mcol mcol--rose">
+                <div class="mcol-head">
+                  <span class="mcol-emoji">🍮</span>
+                  <div>
+                    <h3>Desserts</h3>
+                    <p>Sweet Italian endings</p>
+                  </div>
+                </div>
+                <ul class="mitems">
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fff8e1;">🍮</div>
+                    <div class="minfo">
+                      <b>Tiramisu Classico</b>
+                      <small>Mascarpone, espresso, cocoa dusting</small>
+                      <span class="mprice">₹480</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fce4ec;">🍫</div>
+                    <div class="minfo">
+                      <b>Lava Cake Fondente</b>
+                      <small>Dark chocolate, vanilla gelato, berry</small>
+                      <span class="mprice">₹520</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fffde7;">🍋</div>
+                    <div class="minfo">
+                      <b>Panna Cotta al Limone</b>
+                      <small>Amalfi lemon cream, candied zest</small>
+                      <span class="mprice">₹420</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fce4ec;">🍓</div>
+                    <div class="minfo">
+                      <b>Fragole &amp; Zabaione</b>
+                      <small>Wild strawberries, marsala sabayon</small>
+                      <span class="mprice">₹460</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- COLUMN 4: Beverages -->
+              <div class="mcol mcol--forest">
+                <div class="mcol-head">
+                  <span class="mcol-emoji">🍷</span>
+                  <div>
+                    <h3>Beverages</h3>
+                    <p>Wines &amp; craft cocktails</p>
+                  </div>
+                </div>
+                <ul class="mitems">
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fce4ec;">🍷</div>
+                    <div class="minfo">
+                      <b>Barolo DOCG 2018</b>
+                      <small>Nebbiolo · Piedmont · Full bodied</small>
+                      <span class="mprice">₹1,200/gl</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#e8f5e9;">🍸</div>
+                    <div class="minfo">
+                      <b>Aperol Spritz</b>
+                      <small>Aperol, prosecco, soda, orange</small>
+                      <span class="mprice">₹580</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#e3f2fd;">☕</div>
+                    <div class="minfo">
+                      <b>Espresso Martini</b>
+                      <small>Vodka, Kahlúa, double espresso</small>
+                      <span class="mprice">₹680</span>
+                    </div>
+                  </li>
+                  <li class="mitem">
+                    <div class="mthumb" style="background:#fce4ec;">🥂</div>
+                    <div class="minfo">
+                      <b>Franciacorta Rosé</b>
+                      <small>Sparkling rosé · Delicate berry notes</small>
+                      <span class="mprice">₹950/gl</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Mega Footer -->
+              <div class="mega-foot">
+                <div class="mega-foot-left">
+                  <span>🕐 Kitchen: 12 PM – 11 PM daily</span>
+                  <span>📞 Reservations: +91 98765 43210</span>
+                  <span>📍 42 Vittal Mallya Road, Bengaluru</span>
+                </div>
+                <a href="#featured" class="mega-foot-cta">View Full Menu →</a>
+              </div>
+
+            </div><!-- /.mega-inner -->
+          </div><!-- /.mega-panel -->
+        </li>
+        <!-- ── END MEGA MENU: MENU ── -->
+
+        <!-- ── MEGA MENU: CATEGORIES ── -->
+        <li class="has-mega">
+          <a href="#featured" class="nl">
+            Categories <svg class="nl-arrow" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </a>
+          <div class="mega-panel mega-panel--cats">
+            <div class="mega-inner">
+              <div class="cats-grid">
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🥗</span>
+                  <span class="cat-tile-name">Starters</span>
+                  <span class="cat-tile-n">12 dishes</span>
+                </a>
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🍝</span>
+                  <span class="cat-tile-name">Pasta &amp; Risotto</span>
+                  <span class="cat-tile-n">9 dishes</span>
+                </a>
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🥩</span>
+                  <span class="cat-tile-name">Grills &amp; Meats</span>
+                  <span class="cat-tile-n">8 dishes</span>
+                </a>
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🐟</span>
+                  <span class="cat-tile-name">Fresh Seafood</span>
+                  <span class="cat-tile-n">10 dishes</span>
+                </a>
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🥦</span>
+                  <span class="cat-tile-name">Vegetarian</span>
+                  <span class="cat-tile-n">14 dishes</span>
+                </a>
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🍕</span>
+                  <span class="cat-tile-name">Wood-fired Pizza</span>
+                  <span class="cat-tile-n">11 dishes</span>
+                </a>
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🍮</span>
+                  <span class="cat-tile-name">Desserts</span>
+                  <span class="cat-tile-n">8 dishes</span>
+                </a>
+                <a href="#featured" class="cat-tile">
+                  <span class="cat-tile-ico">🍷</span>
+                  <span class="cat-tile-name">Wine Cellar</span>
+                  <span class="cat-tile-n">40+ labels</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!-- ── END MEGA MENU: CATEGORIES ── -->
+
+        <li><a href="#offers" class="nl">Offers</a></li>
+        <li><a href="#about"  class="nl">About</a></li>
+        <li><a href="#contact" class="nl">Contact</a></li>
+        <li><a href="#contact" class="nl nl--book">Reserve a Table</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <!-- =========================================================
+       HERO SECTION
+  ========================================================== -->
+  <section class="hero" id="home">
+
+    <!-- Left: Big saffron splash + copy -->
+    <div class="hero-left">
+      <div class="hero-splash"></div>
+      <div class="hero-copy">
+        <p class="hero-tag">Est. 1987 · Milano · Bengaluru</p>
+        <h1 class="hero-h1">
+          Taste the<br/>
+          <em>Soul of</em><br/>
+          Italy
+        </h1>
+        <p class="hero-sub">
+          Authentic recipes. Seasonal ingredients.<br/>
+          Unforgettable memories — one plate at a time.
+        </p>
+        <div class="hero-btns">
+          <a href="#featured" class="btn btn-fire">Explore Menu</a>
+          <a href="#about"    class="btn btn-ghost-dark">Our Story</a>
+        </div>
+
+        <!-- Ratings row -->
+        <div class="hero-trust">
+          <div class="trust-item">
+            <span class="trust-score">4.9★</span>
+            <span class="trust-label">Google Reviews</span>
+          </div>
+          <div class="trust-sep"></div>
+          <div class="trust-item">
+            <span class="trust-score">2,400+</span>
+            <span class="trust-label">Happy Guests</span>
+          </div>
+          <div class="trust-sep"></div>
+          <div class="trust-item">
+            <span class="trust-score">#1</span>
+            <span class="trust-label">Italian in Bengaluru</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Stacked food plates -->
+    <div class="hero-right">
+      <!-- Big decorative ring -->
+      <div class="hero-ring-outer"></div>
+      <div class="hero-ring-inner"></div>
+
+      <!-- Floating food cards -->
+      <div class="hcard hcard--a">
+        <div class="hcard-plate">🍝</div>
+        <div class="hcard-info">
+          <b>Lobster Risotto</b>
+          <span>₹1,850</span>
+        </div>
+      </div>
+      <div class="hcard hcard--b">
+        <div class="hcard-plate">🥩</div>
+        <div class="hcard-info">
+          <b>Bistecca</b>
+          <span>₹2,400</span>
+        </div>
+      </div>
+      <div class="hcard hcard--c">
+        <div class="hcard-plate">🍮</div>
+        <div class="hcard-info">
+          <b>Tiramisu</b>
+          <span>₹480</span>
+        </div>
+      </div>
+      <div class="hcard hcard--d">
+        <div class="hcard-plate">🍷</div>
+        <div class="hcard-info">
+          <b>Barolo DOCG</b>
+          <span>₹1,200</span>
+        </div>
+      </div>
+
+      <!-- Chef badge -->
+      <div class="hero-chef-badge">
+        <span class="hcb-emoji">👨‍🍳</span>
+        <span class="hcb-text">Chef's<br/>Special Today</span>
+      </div>
+    </div>
+
+  </section>
+  <!-- /.hero -->
+
+
+  <!-- =========================================================
+       OFFERS TICKER
+  ========================================================== -->
+  <section class="offers-ticker" id="offers">
+    <div class="ticker-label">HOT DEALS</div>
+    <div class="ticker-track">
+      <div class="ticker-inner">
+        <span>🎁 Sunday Brunch 11AM–3PM · ₹1,200/head</span>
+        <span class="tdot">✦</span>
+        <span>🍷 7-Course Tasting Menu · ₹3,500/person</span>
+        <span class="tdot">✦</span>
+        <span>🥂 Wine Pairing · Add just ₹1,800 per guest</span>
+        <span class="tdot">✦</span>
+        <span>🎂 Birthday Dinner · Complimentary dessert platter</span>
+        <span class="tdot">✦</span>
+        <span>🍕 Wood-fired Pizza Night · Every Friday 7PM–10PM</span>
+        <span class="tdot">✦</span>
+        <span>🎁 Sunday Brunch 11AM–3PM · ₹1,200/head</span>
+        <span class="tdot">✦</span>
+        <span>🍷 7-Course Tasting Menu · ₹3,500/person</span>
+        <span class="tdot">✦</span>
+        <span>🥂 Wine Pairing · Add just ₹1,800 per guest</span>
+        <span class="tdot">✦</span>
+        <span>🎂 Birthday Dinner · Complimentary dessert platter</span>
+        <span class="tdot">✦</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       FEATURED MENU
+  ========================================================== -->
+  <section class="section-featured" id="featured">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <span class="sec-eyebrow">Our Selection</span>
+        <h2 class="sec-title">Chef's <em>Featured</em> Dishes</h2>
+        <p class="sec-sub">Handpicked signatures from our kitchen — each dish a love letter to Italian cuisine.</p>
+      </div>
+
+      <!-- CSS-only radio filter tabs -->
+      <div class="ftabs">
+        <input type="radio" name="ft" id="ft-all"      class="fradio" checked />
+        <label for="ft-all"      class="flabel">✦ All</label>
+
+        <input type="radio" name="ft" id="ft-starters" class="fradio" />
+        <label for="ft-starters" class="flabel">🥗 Starters</label>
+
+        <input type="radio" name="ft" id="ft-mains"    class="fradio" />
+        <label for="ft-mains"    class="flabel">🍝 Mains</label>
+
+        <input type="radio" name="ft" id="ft-desserts" class="fradio" />
+        <label for="ft-desserts" class="flabel">🍮 Desserts</label>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <article class="fcard">
+          <div class="fcard-top fcard-top--saffron">
+            <span class="fcard-emoji">🍝</span>
+            <div class="fcard-cat-badge">Pasta</div>
+          </div>
+          <div class="fcard-body">
+            <div class="fcard-tags">
+              <span class="ftag ftag--fire">🔥 Bestseller</span>
+              <span class="ftag ftag--non">Non-Veg</span>
+            </div>
+            <h3>Lobster Tagliolini</h3>
+            <p>Hand-cut egg pasta, fresh lobster, cherry tomato, white wine &amp; a touch of chilli.</p>
+            <div class="fcard-foot">
+              <strong class="fcard-price">₹1,850</strong>
+              <button class="fadd-btn" aria-label="Add">+</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="fcard fcard--wide">
+          <div class="fcard-top fcard-top--chianti">
+            <span class="fcard-emoji">🥩</span>
+            <div class="fcard-cat-badge">Grill</div>
+          </div>
+          <div class="fcard-body">
+            <div class="fcard-tags">
+              <span class="ftag ftag--chef">👨‍🍳 Chef's Pick</span>
+              <span class="ftag ftag--non">Non-Veg</span>
+            </div>
+            <h3>Bistecca Fiorentina</h3>
+            <p>1.2 kg T-bone, wood-charcoal grilled, rosemary butter, Maldon sea salt &amp; lemon.</p>
+            <div class="fcard-foot">
+              <strong class="fcard-price">₹2,400</strong>
+              <button class="fadd-btn" aria-label="Add">+</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="fcard">
+          <div class="fcard-top fcard-top--forest">
+            <span class="fcard-emoji">🐟</span>
+            <div class="fcard-cat-badge">Seafood</div>
+          </div>
+          <div class="fcard-body">
+            <div class="fcard-tags">
+              <span class="ftag ftag--new">🌿 Seasonal</span>
+              <span class="ftag ftag--non">Non-Veg</span>
+            </div>
+            <h3>Branzino in Crosta</h3>
+            <p>Whole sea bass in salt crust, herb-infused oil, caperberry &amp; citrus.</p>
+            <div class="fcard-foot">
+              <strong class="fcard-price">₹1,650</strong>
+              <button class="fadd-btn" aria-label="Add">+</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="fcard">
+          <div class="fcard-top fcard-top--gold">
+            <span class="fcard-emoji">🍄</span>
+            <div class="fcard-cat-badge">Pasta</div>
+          </div>
+          <div class="fcard-body">
+            <div class="fcard-tags">
+              <span class="ftag ftag--chef">👨‍🍳 Chef's Pick</span>
+              <span class="ftag ftag--veg">Veg</span>
+            </div>
+            <h3>Black Truffle Tagliatelle</h3>
+            <p>Silky egg pasta, black truffle shavings, porcini cream, aged parmigiano.</p>
+            <div class="fcard-foot">
+              <strong class="fcard-price">₹1,280</strong>
+              <button class="fadd-btn" aria-label="Add">+</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="fcard">
+          <div class="fcard-top fcard-top--rose">
+            <span class="fcard-emoji">🍫</span>
+            <div class="fcard-cat-badge">Dessert</div>
+          </div>
+          <div class="fcard-body">
+            <div class="fcard-tags">
+              <span class="ftag ftag--fire">❤️ Most Loved</span>
+              <span class="ftag ftag--veg">Veg</span>
+            </div>
+            <h3>Fondente al Cioccolato</h3>
+            <p>Warm chocolate lava cake, Madagascan vanilla gelato &amp; raspberry coulis.</p>
+            <div class="fcard-foot">
+              <strong class="fcard-price">₹520</strong>
+              <button class="fadd-btn" aria-label="Add">+</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="fcard">
+          <div class="fcard-top fcard-top--sky">
+            <span class="fcard-emoji">🦐</span>
+            <div class="fcard-cat-badge">Starter</div>
+          </div>
+          <div class="fcard-body">
+            <div class="fcard-tags">
+              <span class="ftag ftag--new">✨ New</span>
+              <span class="ftag ftag--non">Non-Veg</span>
+            </div>
+            <h3>Gamberi al Aglio</h3>
+            <p>Succulent king prawns, garlic butter, white wine, fresh parsley, bread.</p>
+            <div class="fcard-foot">
+              <strong class="fcard-price">₹780</strong>
+              <button class="fadd-btn" aria-label="Add">+</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.cards-grid -->
+
+      <div class="sec-cta">
+        <a href="#" class="btn btn-outline-fire">View Complete Menu &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       WHY CHOOSE US — Feature strip
+  ========================================================== -->
+  <section class="why-us">
+    <div class="wrap">
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-ico why-ico--saffron">🌿</div>
+          <h4>Farm to Table</h4>
+          <p>Ingredients sourced fresh every morning from partner farms and local markets.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-ico why-ico--chianti">🍷</div>
+          <h4>Curated Wine Cellar</h4>
+          <p>500+ labels from Tuscan and international vineyards, sommelier-curated.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-ico why-ico--forest">🏆</div>
+          <h4>Award Winning</h4>
+          <p>Times Food Award — Best Italian Restaurant 2023. Michelin Recommended.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-ico why-ico--gold">👨‍🍳</div>
+          <h4>Master Chefs</h4>
+          <p>Executive Chef Marco Valentini trained in Bologna and Milan, 22 years.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       ABOUT SECTION
+  ========================================================== -->
+  <section class="about-sec" id="about">
+    <div class="wrap">
+      <div class="about-grid">
+
+        <!-- Visual side -->
+        <div class="about-vis">
+          <div class="avis-main">
+            <span style="font-size:5rem">👨‍🍳</span>
+            <p>Chef Marco Valentini</p>
+            <small>Executive Chef · 22 Years</small>
+          </div>
+          <div class="avis-accent">
+            <span style="font-size:2.2rem">🏆</span>
+            <p>Michelin Recommended</p>
+            <small>2021 · 2022 · 2023</small>
+          </div>
+          <div class="avis-year">
+            <span class="avy-num">1987</span>
+            <span class="avy-text">Est.</span>
+          </div>
+          <div class="avis-stat-pill">
+            <b>2,400+</b> happy guests this month
+          </div>
+        </div>
+
+        <!-- Text side -->
+        <div class="about-text">
+          <span class="sec-eyebrow">Our Philosophy</span>
+          <h2 class="sec-title">Crafted with<br/><em>Passion &amp; Soul</em></h2>
+          <p class="about-lead">
+            La Bella Cucina was born from a single obsession — to honour the
+            time-honoured traditions of Italian <em>cucina</em> while celebrating
+            the abundant seasonal produce of the Indian subcontinent.
+          </p>
+          <p class="about-body">
+            Every recipe begins with a story. Chef Marco Valentini, trained in the
+            trattorias of Bologna and Milanese fine-dining kitchens, brings three
+            decades of mastery to each plate. Ingredients are sourced from farms
+            and artisan producers who share our uncompromising standards.
+          </p>
+
+          <div class="about-feats">
+            <div class="afeat">
+              <span class="afeat-dot afeat-dot--saffron"></span>
+              <div>
+                <strong>Handmade Pasta Daily</strong>
+                <p>Every pasta is made fresh in-house each morning</p>
+              </div>
+            </div>
+            <div class="afeat">
+              <span class="afeat-dot afeat-dot--chianti"></span>
+              <div>
+                <strong>Wood-fired Ovens</strong>
+                <p>Traditional wood fire — the soul of Neapolitan cooking</p>
+              </div>
+            </div>
+            <div class="afeat">
+              <span class="afeat-dot afeat-dot--forest"></span>
+              <div>
+                <strong>Zero Compromise</strong>
+                <p>No artificial flavours, colours or preservatives — ever</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-fire">Book Your Table</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       TESTIMONIALS
+  ========================================================== -->
+  <section class="testimonials" id="reviews">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="sec-eyebrow">Guest Reviews</span>
+        <h2 class="sec-title">Loved by <em>Thousands</em></h2>
+      </div>
+      <div class="test-grid">
+        <div class="tcard">
+          <div class="tcard-stars">★★★★★</div>
+          <p>"Hands-down the finest Italian experience in Bengaluru. The truffle tagliatelle is worth every single rupee. Chef Marco is a true artist."</p>
+          <div class="tcard-auth">
+            <div class="tcard-av tcard-av--red">RS</div>
+            <div><strong>Rohan Sharma</strong><small>Food Critic, Times of India</small></div>
+          </div>
+        </div>
+        <div class="tcard tcard--hero">
+          <div class="tcard-stars">★★★★★</div>
+          <p>"We celebrated our anniversary here — absolutely magical. Every detail, from the ambience to the service to the desserts, was just perfect."</p>
+          <div class="tcard-auth">
+            <div class="tcard-av tcard-av--saffron">PP</div>
+            <div><strong>Priya &amp; Pranav</strong><small>Loyal guests since 2019</small></div>
+          </div>
+        </div>
+        <div class="tcard">
+          <div class="tcard-stars">★★★★★</div>
+          <p>"The Bistecca Fiorentina paired with the Barolo was transcendent. The sommelier's recommendation was spot on. Will return next week!"</p>
+          <div class="tcard-auth">
+            <div class="tcard-av tcard-av--green">AK</div>
+            <div><strong>Ananya Krishnan</strong><small>Lifestyle Blogger</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       CONTACT / RESERVATION
+  ========================================================== -->
+  <section class="contact-sec" id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <div class="cinfo">
+          <span class="sec-eyebrow">Find Us</span>
+          <h2 class="sec-title">Visit <em>La Bella</em></h2>
+          <div class="cinfo-items">
+            <div class="cinfo-row">
+              <div class="cinfo-ico">📍</div>
+              <div>
+                <strong>Address</strong>
+                <p>42 Vittal Mallya Road, UB City Complex<br/>Bengaluru, Karnataka 560001</p>
+              </div>
+            </div>
+            <div class="cinfo-row">
+              <div class="cinfo-ico">🕐</div>
+              <div>
+                <strong>Hours</strong>
+                <p>Mon–Fri: 12:00 PM – 11:00 PM<br/>Sat–Sun: 11:00 AM – 11:30 PM</p>
+              </div>
+            </div>
+            <div class="cinfo-row">
+              <div class="cinfo-ico">📞</div>
+              <div>
+                <strong>Reservations</strong>
+                <p>+91 98765 43210<br/>reservations@labellacucina.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="res-form">
+          <h3>Reserve Your Table</h3>
+          <form action="#" method="post">
+            <div class="frow">
+              <div class="fg">
+                <label for="fn">First Name</label>
+                <input type="text" id="fn" placeholder="Marco" required />
+              </div>
+              <div class="fg">
+                <label for="ln">Last Name</label>
+                <input type="text" id="ln" placeholder="Rossi" required />
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label for="dt">Date</label>
+                <input type="date" id="dt" required />
+              </div>
+              <div class="fg">
+                <label for="tm">Time</label>
+                <input type="time" id="tm" required />
+              </div>
+            </div>
+            <div class="frow">
+              <div class="fg">
+                <label for="gst">Guests</label>
+                <select id="gst">
+                  <option>1 Guest</option>
+                  <option selected>2 Guests</option>
+                  <option>3 Guests</option>
+                  <option>4 Guests</option>
+                  <option>5 Guests</option>
+                  <option>6+ (Private)</option>
+                </select>
+              </div>
+              <div class="fg">
+                <label for="occ">Occasion</label>
+                <select id="occ">
+                  <option>Dinner</option>
+                  <option>Anniversary</option>
+                  <option>Birthday</option>
+                  <option>Business</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="fg">
+              <label for="notes">Special Requests</label>
+              <textarea id="notes" rows="3" placeholder="Dietary needs, allergies, or any special arrangements..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-fire btn-full">Confirm Reservation ✓</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="wrap">
+        <div class="footer-grid">
+
+          <!-- Brand -->
+          <div class="f-brand">
+            <div class="footer-logo">
+              <div class="logo-mark logo-mark--sm">LB</div>
+              <div class="logo-wordmark">
+                <span class="logo-main">La Bella</span>
+                <span class="logo-sub">Cucina · Est. 1987</span>
+              </div>
+            </div>
+            <p>Where every dish tells a story. Authentic Italian cuisine crafted with love since 1987.</p>
+            <div class="socials">
+              <a href="#" class="soc" aria-label="Instagram">IG</a>
+              <a href="#" class="soc" aria-label="Facebook">FB</a>
+              <a href="#" class="soc" aria-label="Twitter/X">TW</a>
+              <a href="#" class="soc" aria-label="YouTube">YT</a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="f-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#featured">Our Menu</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#offers">Special Offers</a></li>
+              <li><a href="#contact">Reservations</a></li>
+            </ul>
+          </div>
+
+          <!-- Menu -->
+          <div class="f-col">
+            <h4>On the Menu</h4>
+            <ul>
+              <li><a href="#featured">Starters &amp; Antipasti</a></li>
+              <li><a href="#featured">Pasta &amp; Risotto</a></li>
+              <li><a href="#featured">Grills &amp; Meats</a></li>
+              <li><a href="#featured">Fresh Seafood</a></li>
+              <li><a href="#featured">Desserts</a></li>
+              <li><a href="#featured">Wine Cellar</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="f-col">
+            <h4>Contact Us</h4>
+            <ul class="f-contact">
+              <li><span>📍</span> 42 Vittal Mallya Road, UB City, Bengaluru 560001</li>
+              <li><span>📞</span> +91 98765 43210</li>
+              <li><span>✉️</span> hello@labellacucina.in</li>
+              <li><span>🕐</span> Daily: 12 PM – 11:30 PM</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div class="wrap">
+        <p>© 2025 La Bella Cucina. All rights reserved. Crafted with ❤️ in Bengaluru.</p>
+        <div class="f-bar-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
